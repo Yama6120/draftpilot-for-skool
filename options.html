@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DraftPilot for Skool — Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <div><h1>DraftPilot for Skool</h1><p>Draft replies with your own Anthropic API key.</p></div>
+    </header>
+
+    <section class="card">
+      <div class="label-row"><label for="apiKey">API key</label><span class="provider">Anthropic</span></div>
+      <input id="apiKey" type="password" autocomplete="off" placeholder="sk-ant-…">
+      <p class="hint">Stored only in this browser.</p>
+
+      <label for="defaultTone">Default tone</label>
+      <select id="defaultTone"><option>Friendly</option><option>Expert</option><option>Short</option></select>
+
+      <label for="model">Model</label>
+      <input id="model" type="text" spellcheck="false">
+      <p class="hint">The verified default is prefilled. You can override it.</p>
+
+      <button id="save" class="primary" type="button">Save</button>
+      <p id="saveStatus" class="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card plan-card">
+      <div><span class="eyebrow">FREE PLAN</span><strong id="usage">Free plan: 0/10 drafts used today</strong></div>
+      <a id="getPro" class="pro-link" href="https://gumroad.com/l/draftpilot-pro" target="_blank" rel="noopener">Get Pro — $7/mo</a>
+    </section>
+
+    <section class="card">
+      <label for="licenseKey">Pro license key</label>
+      <div class="license-row"><input id="licenseKey" type="password" autocomplete="off"><button id="activate" type="button">Activate</button></div>
+      <p id="licenseStatus" class="status" aria-live="polite"></p>
+    </section>
+
+    <footer><a href="https://yama6120.github.io/draftpilot-for-skool/" target="_blank" rel="noopener">Privacy policy</a></footer>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

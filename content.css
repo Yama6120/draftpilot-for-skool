@@ -1,0 +1,10 @@
+[data-draftpilot-root] { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; box-sizing: border-box; }
+.draftpilot-toolbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:8px 0 12px; padding:7px 8px; border:1px solid #e2e8f0; border-radius:10px; background:#fff; box-shadow:0 1px 2px rgba(15,23,42,.05); color:#0f172a; }
+.draftpilot-toolbar button { font:inherit; cursor:pointer; }
+.draftpilot-draft { border:0; border-radius:8px; padding:7px 11px; background:#0f172a; color:#fff; font-weight:650; }
+.draftpilot-draft:disabled { opacity:.62; cursor:wait; }
+.draftpilot-tones { display:flex; gap:5px; }
+.draftpilot-tone { border:1px solid #cbd5e1; border-radius:999px; padding:5px 9px; background:#fff; color:#475569; font-size:12px; }
+.draftpilot-tone[data-active="1"] { border-color:#0f172a; background:#f1f5f9; color:#0f172a; font-weight:650; }
+.draftpilot-message { width:100%; display:flex; gap:8px; align-items:center; font-size:12px; line-height:1.4; color:#475569; }
+.draftpilot-message button { border:0; background:transparent; padding:0; color:#b45309; text-decoration:underline; font-weight:650; }
