@@ -1,5 +1,6 @@
 node_modules/
 dist/
+_handoff/
 *.zip
 .DS_Store
 Thumbs.db
